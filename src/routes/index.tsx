@@ -569,7 +569,7 @@ function About() {
     <Section
       id="about"
       eyebrow="About me"
-      title="A junior developer building production-ready apps."
+      title="Computer Engineering Student & Full-Stack Developer"
     >
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.4fr_1fr]">
         <motion.div
@@ -580,22 +580,25 @@ function About() {
           className="glass rounded-2xl p-6 md:p-8"
         >
           <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
-            I'm a junior full-stack developer with a strong front-end focus. I love crafting
-            accessible interfaces and pairing them with reliable APIs. My recent work covers the
-            full MERN stack, Next.js apps with TypeScript, and polished landing sites with smooth
-            motion.
+            I'm a Computer Engineering student at the Lebanese International University with a
+            passion for building modern, responsive, and user-friendly web applications. I enjoy
+            transforming ideas into real-world software using React.js, Node.js, Express.js,
+            MongoDB, and SQL.
           </p>
+
           <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">
-            I care about code quality, performance, and shipping. I'm comfortable in a team, take
-            feedback well, and I'm actively looking for my first full-time role as a software / web
-            developer.
+            Through my internship and personal projects, I've gained hands-on experience developing
+            full-stack applications, REST APIs, and responsive interfaces. I'm continuously
+            improving my skills, learning new technologies, and looking for an opportunity to
+            contribute to a professional software development team.
           </p>
+
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
-              { k: "Location", v: "Remote / EU" },
-              { k: "Experience", v: "2+ years" },
-              { k: "Languages", v: "EN, FR" },
-              { k: "Status", v: "Open to work" },
+              { k: "Location", v: "Lebanon" },
+              { k: "Education", v: "Computer Engineering" },
+              { k: "Stack", v: "MERN" },
+              { k: "Status", v: "Open to Work" },
             ].map((i) => (
               <div key={i.k} className="rounded-xl border border-white/10 bg-white/5 p-3">
                 <div className="text-[11px] uppercase tracking-wide text-muted-foreground">
@@ -606,6 +609,7 @@ function About() {
             ))}
           </div>
         </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -613,13 +617,14 @@ function About() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="glass rounded-2xl p-6 md:p-8"
         >
-          <h3 className="text-lg font-semibold">What I focus on</h3>
+          <h3 className="text-lg font-semibold">What I Do</h3>
+
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             {[
-              "Pixel-perfect, responsive UI in React & Tailwind",
-              "Type-safe APIs with Node.js and TypeScript",
-              "Clean component architecture and reusability",
-              "Performance, accessibility and good UX details",
+              "Build responsive web applications with React & Tailwind CSS",
+              "Develop REST APIs using Node.js & Express.js",
+              "Design and manage MongoDB & SQL databases",
+              "Write clean, maintainable, and scalable code",
             ].map((t) => (
               <li key={t} className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald" />
@@ -922,16 +927,8 @@ function Contact() {
               label="Email"
               value="ahmadshuman2025@gmail.com"
             />
-            <ContactRow
-              icon={<Phone className="h-4 w-4" />}
-              label="Phone"
-              value="+961 3 023 200"
-            />
-            <ContactRow
-              icon={<MapPin className="h-4 w-4" />}
-              label="Location"
-              value="Lebanon"
-            />
+            <ContactRow icon={<Phone className="h-4 w-4" />} label="Phone" value="+961 3 023 200" />
+            <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value="Lebanon" />
           </div>
 
           <div className="flex items-center gap-2 pt-2">
@@ -1057,9 +1054,7 @@ function Footer() {
   return (
     <footer className="border-t border-white/5 px-4 py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-xs text-muted-foreground sm:flex-row">
-        <p>
-          © {new Date().getFullYear()} Ahmad Shuman. All rights reserved.
-        </p>
+        <p>© {new Date().getFullYear()} Ahmad Shuman. All rights reserved.</p>
         <p className="flex items-center gap-1">
           Built with <span className="text-emerald">React</span>, Vite & Tailwind CSS.
         </p>
